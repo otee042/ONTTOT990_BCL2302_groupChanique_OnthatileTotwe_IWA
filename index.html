@@ -9,16 +9,16 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
    </head>
    <body>
-        <header>
+        <header class="header">
             <h1>
                 Tally Count
             </h1>
         </header>
 
-        <div>
+        <aside class="controls">
                 <label>
                     <span>Display</span>
                     <select>
@@ -40,9 +40,21 @@
                 </label>
                 <button>Settings</button>
         
-        </div>
+        </aside>
 
-        <div></div>
-        <footer></footer>
+        <main class="counter">
+            <input class="counter_value" readonly value="10">
+            <div class="counter_actions">
+                <button class="counter_button 
+                counter_button_first">-</button>
+                <button class="counter_button">+</button>
+            </div>
+
+            
+        </main>
+        <footer>
+            Inspired by <a href="https://tallycount.app/
+            ">Tally Count</a>. Note that this is merely a  student practice project for learning JavaScript.
+        </footer>
    </body>
    </html>
