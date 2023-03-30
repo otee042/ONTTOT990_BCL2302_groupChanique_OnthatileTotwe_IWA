@@ -1,35 +1,35 @@
-const date: 2050
-const status: 'student'
-const count = 0
+const year= '2050'                              //used the correct syntax
+const status= 'parent'                          //used the correct syntax
+let count = 0                                   //declaration of count
 
-if (date = 2050) {
-	console.log("January", 'New Year’s Day'
+if (year) {
+	console.log("January", 'New Year’s Day')
 	console.log("March", 'Human Rights Day')
 	date = 'April'
 	console.log(date, 'Family Day')
 	console.log(date, 'Freedom Day')
-	let count = count + 4
+	count = count + 4                              //counting of holidays
 
-	if (status = "student") {
+	if (status == "student") {                     
 	  console.log('June', 'Youth Day')
-		let count = count + 1
+	  count = count + 1                             //removed the "let" as it has already been declared 
   }
 
 	console.log('August', 'Women’s Day')
 	console.log('September', 'Heritage Day')
 	date = 'December'
 	console.log(date, 'Day of Reconciliation')
-	let count = count + 3
+	count = count + 3
 
-	if (status = "parent") {
+	if (status == "parent") {
 	  console.log(date, 'Christmas Day')
-		let count = count + 1
+	 count = count + 1
   }
 
 	console.log(date, 'Day of Goodwill')
-	let count = count + 1
+	count = count + 1
 }
 
 console.log('Your status is:', status)
-console.log('The year is:', date)
+console.log('The year is:', year)
 console.log('The total holidays is:', count)
