@@ -1,8 +1,8 @@
 const year= '2050'                              //used the correct syntax
-const status= 'parent'                          //used the correct syntax
-let count = 0                                   //declaration of count
+const status= 'parent'                          //changed the status of student to parent
+let count = 0                                   //declaration of count of holidays 
 
-if (year) {
+if (year) {										// changed the date to year to
 	console.log("January", 'New Year’s Day')
 	console.log("March", 'Human Rights Day')
 	date = 'April'
@@ -31,5 +31,5 @@ if (year) {
 }
 
 console.log('Your status is:', status)
-console.log('The year is:', year)
+console.log('The year is:', year)						//changed the date to year
 console.log('The total holidays is:', count)
