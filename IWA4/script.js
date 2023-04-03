@@ -10,7 +10,7 @@ if (year) {										// changed the date to year to
 	console.log(date, 'Freedom Day')
 	count = count + 4                              //counting of holidays
 
-	if (status == "student") {                     
+	if (status === "student") {                     
 	  console.log('June', 'Youth Day')
 	  count = count + 1                             //removed the "let" as it has already been declared 
   }
@@ -21,7 +21,7 @@ if (year) {										// changed the date to year to
 	console.log(date, 'Day of Reconciliation')
 	count = count + 3
 
-	if (status == "parent") {
+	if (status === "parent") {
 	  console.log(date, 'Christmas Day')
 	 count = count + 1
   }

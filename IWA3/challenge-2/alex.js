@@ -1,6 +1,6 @@
-export const firstname = "Alex"
-export const surname = "Naidoo"
+ const firstname = "Alex"
+ const surname = "Naidoo"
 export const role = "Head of Marketing"
 
-const display= firstname + " " + surname
+const display= firstname + " " + surname + " (" + role + ")"
 document.querySelector('#alex').innerText = display
