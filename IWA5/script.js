@@ -1,15 +1,21 @@
 const FREE_WARNING = 'Free shipping only applies to single customer orders'
-const BANNED_WARNIN = 'Unfortunately we do not ship to your country of residence'
-const NONE_SELECTED = '0'
+const BANNED_WARNING = 'Unfortunately we do not ship to your country of residence'
+const NONE_SELECTED = 0
 const customers = '1'
 let location = 'RSA'
-currency = null
+let currency = "R" || "$"
 
-if (location = RSA) { shipping === 400 && currency === 'R' }
 
-if (location = NAM)
-shipping = 600 
-else shipping = 800
+if (location = RSA) { 
+    shipping === 400 && currency === 'R'
+
+}
+
+if (location = NAM) {
+    shipping === 600  && currency === '$'
+}
+ 
+else shipping = 800  && currency === '$'
 
 shoes = 300 * 1
 toys - 100 * 5
@@ -28,11 +34,11 @@ if (shoes + batteries + pens + shirts > 1000 &&  ) {
 	}
 
 
-if (shipping = 0) && (customers !== 1) { 
-    console.log(WARNING) }
+if (shipping = 0 && customers !== 1) { 
+    console.log(FREE_WARNING) }
 
 if (location = 'NK') {
-    console.log(WARNING)  
+    console.log(BANNED_WARNING)  
     console.log('price', currency, shoes + batteries + pens + shirts + shipping)
 }
 
