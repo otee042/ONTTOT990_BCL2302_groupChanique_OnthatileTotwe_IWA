@@ -1,44 +1,42 @@
-const FREE_WARNING = 'Free shipping only applies to single customer orders'
+const FREE_WARNING = 'Free shipping only applies to single orders'
 const BANNED_WARNING = 'Unfortunately we do not ship to your country of residence'
-const NONE_SELECTED = 0
-const customers = '1'
-let location = 'RSA'
-let currency = "R" || "$"
+const NONE_SELECTED = 0;
+let customers = '1';
+let location = 'RSA';
+let currency = 'R';
+let shoes = 300 * 1 ;
+let toys = 100 * 5;         
+let shirts = 150 * NONE_SELECTED ;
+let batteries = 35 * 2;         
+let pens = 5 * NONE_SELECTED    //
+let price =  shirts + shoes + batteries + toys + pens + shipping   //combined the costs and declared them as price
+let calcShipping = undefined;        
 
 
-if (location = RSA) { 
-    shipping === 400 && currency === 'R'
+if (location ) { 
+    shipping = 400 && currency
+    if (price >= 1000 && customers == 1){
+        shipping = 0
+    }
 
 }
 
-if (location = NAM) {
-    shipping === 600  && currency === '$'
+if (location = 'NAM') {           //declared location as NAM
+    shipping === 600  &&  currency === '$'
+} if (price >= 60 && customers == 1) {                                    //for other countries
+    shipping = 0
 }
- 
-else shipping = 800  && currency === '$'
 
-shoes = 300 * 1
-toys - 100 * 5
-shirts = 150 * 'NONE_SELECTED'
-batteries = 35 * 2
-pens = 5 * 'NONE_SELECTED' 
+if (price >= 1000 && location === 'NAM' ) {
+		}else {
+            shipping = calcShipping
+        }
 
-shipping = null
-currency = $
-
-if (shoes + batteries + pens + shirts > 1000 &&  ) {
-	if (location = NAM && customers < 2) {
-			if (location = RSA)
-		    shipping = 0 || calcShipping
-		}
-	}
-
-
-if (shipping = 0 && customers !== 1) { 
-    console.log(FREE_WARNING) }
-
-if (location = 'NK') {
+if (shipping === 0 && customers !== 1) { 
+    console.warn(FREE_WARNING) 
+} else if (location === 'NK') {
     console.log(BANNED_WARNING)  
-    console.log('price', currency, shoes + batteries + pens + shirts + shipping)
+} else {
+    console.log('price', currency , price) 
 }
 
