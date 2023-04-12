@@ -11,7 +11,7 @@ const divider = '-------------------------------------------------'
 // Only change below this line
 
 const owed = parseFloat(-1* leoBalance) +  (-1 * sarahBalance) 
-const leo = `${leoName}  ${leoSurname.trim()}  (Owed: R ${parseFloat(-1 * leoBalance).toFixed(2)})\n`
+const leo = `${leoName}  ${leoSurname.trim()}  (Owed: R ${parseFloat(-1 * leoBalance).toFixed(2)})\n`  //used trim to accomodate the spaces
 const sarah = `${sarahName.trim()}  ${sarahSurname}  (Owed :R ${parseFloat (-1 * sarahBalance).toFixed(2)})\n \n`
 const total = `\n Total amount owed: R ${(owed).toFixed(2)} `
 const result = leo + sarah + divider + total + ` \n${divider} `

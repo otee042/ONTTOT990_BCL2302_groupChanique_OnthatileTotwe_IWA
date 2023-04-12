@@ -1,8 +1,7 @@
-const nickname = "Timmy";
+const nickname = false;
 const firstname = "Timothy";
 const twoNames = nickname + firstname
-const message = "Good Morning";
 
 if (twoNames){
-    console.log(` Good Morning , ${nickname || firstname} `)
+    console.log(` Good Morning , ${nickname || firstname}! `)
 } 
