@@ -1,4 +1,4 @@
-/*const currentYear = new Date().getFullYear()
+const currentYear = new Date().getFullYear()
 
 const holidays = {
     0: {
@@ -53,9 +53,53 @@ const futureId = 9
 
 // Do not change code above this comment
 
-console.log(holidays.futureId.name || 'ID {futureId} not created yet')
+//cecking if the an item has been assigned to the futureId
+if(holidays.futureId) {
+    console.log(holidays.futureId.name)
+} else{
+    console.log(`ID ${futureId}  not yet created yet`)
+}
 
-copied = holidays.christmas
+//changing the time of the value6
+const copied = {
+    6: {
+        id: 6,
+        name: 'X-mas',
+        date: new Date(`25 December ${currentYear} 00:00`),
+
+}
+}
+
+const correctDate = copied
+if(copied[6].date < holidays[6].date) {
+    console.log('New date earlier: true')
+} else{
+    console.log('false')
+}
+
+if(copied[6].id == holidays[6].id) {
+    console.log('ID change: false')
+} else{
+    console.log(copied[6].id)
+}
+
+if(holidays[6].name == copied[6].name) {
+    console.log('Name change: false')
+} else{
+    console.log(`Name change: ${copied[6].name}`)
+}
+if(holidays[6].date == copied[6].date) {
+    console.log('Date change: false')
+}else{
+    console.log(`Date change: ${copied[6].date}`)
+}
+
+
+    
+
+
+
+/*copied = holidays.christmas
 copied = { name: 'X-mas Day' }
 correctDate = copied.date
 correctDate.hours = 0
@@ -101,5 +145,3 @@ console.log('{lastDay}/{lastMonth}/{currentYear}')
 
 const randomHoliday = holidays[Math.random]
 console.log(randomHoliday.date)*/
-const instance = new Date()
-console.log(instance)
