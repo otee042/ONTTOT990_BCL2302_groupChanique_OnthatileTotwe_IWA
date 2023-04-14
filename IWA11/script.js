@@ -1,22 +1,28 @@
-const 1-root = document(order1),
-const 1-biscuits: document(biscuits),
-const 1-donuts: document(donuts),
-const 1-pancakes: document(pancakes),
-const 1-status: document(status)
+const order1 = document.querySelector('[.date-key = "order1"]');        //ORDER 1
+const biscuits1 = document.querySelector('[.data-biscuits="10"]');
+const donuts1 = document.querySelector('[.data-donuts = "13"]');
+const pancakes1 = document.querySelector('[.pancakes = "0"]');
+const status1 = document.querySelector('[.status]');                 //status for status order 1
 
-const 2-root = document(order2),
-const 2-biscuits: document(biscuits),
-const 2-donuts: document(donuts),
-const 2-pancakes: document(pancakes),
-const 2-status: document(status)
+//ORDER 2
+const root2 = document.querySelector('[.data-key="order2"]');
+const biscuits2 = document.querySelector('[.data-biscuits="5" ]');
+const donuts2 = document.querySelector('[.data-donuts="0"]');
+const pancakes2 = document.querySelector('[.data-pancakes="2"]');
+const status2 = document.querySelector('[.status dd]');                        //status for order 2
 
-const 3-root = document(order3),
-const 3-biscuits: document(biscuits),
-const 3-donuts: document(donuts),
-const 3-pancakes: document(pancakes),
-const 3-status: document(status)
+//ORDER 3
+const root3 = document.querySelector('[.data-key="order3" ]');
+const biscuits3 = document.querySelector('[.data-biscuits="12"]');
+const donuts3 = document.querySelector('[.data-donuts="11" ]');
+const pancakes3 = document.querySelector('[.data-pancakes ="15" ]');
+const status3 = document.querySelector('[.status  dd]');                 //status for order 3
 
-1-biscuits= 1-root.biscuits,
+biscuits1.innerText = biscuits1.getAttribute('[.data-biscuits="10"]');
+donuts1.innerText = donuts1.getAttribute('[.data-donuts = "13"]');
+pancakes1.innerText = pancakes1.getAttribute('[.data-pancakes="2"]')                 
+
+/*1-biscuits= 1-root.biscuits,
 1-donuts = 1-root.donuts,
 1-pancakes = 1-root.pancakes,
 1-status = 1-root.status ? Delivered : Pending
@@ -29,7 +35,7 @@ const 3-status: document(status)
 3-biscuits= 3-root.biscuits,
 3-donuts = 3-root.donuts,
 3-pancakes = 3-root.pancakes,
-3-status = 3-root.status ? Delivered : Pending
+3-status = 3-root.status ? Delivered : Pending*/
  
 
  

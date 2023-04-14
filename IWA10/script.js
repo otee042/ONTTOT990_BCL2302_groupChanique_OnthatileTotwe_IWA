@@ -57,7 +57,7 @@ const futureId = 9
 if(holidays.futureId) {
     console.log(holidays.futureId.name)
 } else{
-    console.log(`ID ${futureId}  not yet created yet`)
+    console.log(`ID ${futureId} not created yet`)
 }
 
 //changing the time of the value6
