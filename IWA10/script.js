@@ -66,8 +66,7 @@ const copied = {
         id: 6,
         name: 'X-mas',
         date: new Date(`25 December ${currentYear} 00:00`),
-
-}
+    }
 }
 
 //checking for earlier date
@@ -143,8 +142,10 @@ if(holidays[6].date == copied[6].date) {
     console.log(`${lateDay} / ${lastMonth + 1} / ${currentYear} `)
 
     //for random holiday
-    const randomHoliday = new Date(Math.random(holidays[0].date , holidays[1].date))
+    const randomHoliday = Math.round(Math.random())
     console.log(randomHoliday)
+    
+    
     
 
 
