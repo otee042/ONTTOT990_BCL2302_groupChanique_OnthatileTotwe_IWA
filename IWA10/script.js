@@ -70,6 +70,7 @@ const copied = {
 }
 }
 
+//checking for earlier date
 const correctDate = copied
 if(copied[6].date < holidays[6].date) {
     console.log('New date earlier: true')
@@ -94,8 +95,58 @@ if(holidays[6].date == copied[6].date) {
     console.log(`Date change: ${copied[6].date}`)
 }
 
+//Convert the date to milliseconds to be able to get a min value and max value
+    const  holidays0 = Date.parse(holidays[0].date)
+    const  holidays1 = Date.parse(holidays[1].date)
+    const  holidays2 = Date.parse(holidays[2].date)
+    const  holidays3 = Date.parse(holidays[3].date)
+    const  holidays4 = Date.parse(holidays[4].date)
+    const  holidays5 = Date.parse(holidays[5].date)
+    const  holidays6 = Date.parse(holidays[6].date)
+    const  holidays7 = Date.parse(holidays[7].date)
+    const  holidays8 = Date.parse(holidays[8].date)
 
+    const firstHolidayTimestamp = Math.min(
+        holidays0,
+        holidays1,
+        holidays2,
+        holidays3,
+        holidays4,
+        holidays5,
+        holidays6,
+        holidays7,
+        holidays8,
+    )
+
+    const lastHolidayTimestamp = Math.max(
+        holidays0,
+        holidays1,
+        holidays2,
+        holidays3,
+        holidays4,
+        holidays5,
+        holidays6,
+        holidays7,
+        holidays8,
+    )
+
+    //for first holiday
+    const firstDay = new Date(firstHolidayTimestamp)
+    const earlyDay = firstDay.getDate()
+    const firstMonth = firstDay.getMonth()
+    console.log(`${earlyDay} / ${firstMonth + 1} / ${currentYear}`)
+
+    //for last holiday
+    const lastDay = new Date(lastHolidayTimestamp)
+    const lateDay = lastDay.getDate()
+    const lastMonth = lastDay.getMonth()
+    console.log(`${lateDay} / ${lastMonth + 1} / ${currentYear} `)
+
+    //for random holiday
+    const randomHoliday = new Date(Math.random(holidays[0].date , holidays[1].date))
+    console.log(randomHoliday)
     
+
 
 
 
@@ -135,8 +186,10 @@ const lastHolidayTimestamp = Math.max(
     holidays[8].date.getTime,
 )
 
-const firstDay = firstHolidayTimestamp.getDate
-const firstMonth = firstHolidayTimestamp.getMonth
+const firstDay = new Date(firstHolidayTimestamp)
+const lastDay = new Date(lastHolidayTimestamp)
+console.log(firstDay , lastDay)
+/*const firstMonth = firstHolidayTimestamp.getMonth
 const lastDay = lastHolidayTimestamp.getDate
 const lastMonth = lastHolidayTimestamp.getMonth
 
