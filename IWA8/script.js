@@ -33,5 +33,10 @@ const sarah = {
         postalCode: sarahPostal,
     }
 }
-console.log(leo)
+const leoAdress = {
+    leoNumber,
+    leoStreet,
+    leoPostal,
+}
+console.log(leo , leoNumber , leoStreet , leoPostal)
 console.log(sarah)

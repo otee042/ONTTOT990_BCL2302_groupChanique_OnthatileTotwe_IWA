@@ -9,7 +9,13 @@ const status1 = order1.querySelector('.status dd');
 biscuits1.innerText = order1.getAttribute('data-biscuits');
 donuts1.innerText = order1.getAttribute('data-donuts');
 pancakes1.innerText = order1.getAttribute('data-pancakes');
-status1.innerText = order1.getAttribute('data-delivered');
+
+if (status1.dataset.delivered === "true") {
+    status1.innerText = "Delivered"
+} else{
+    status1.innerText = "Pending"
+}
+
 
 
 //Order 2
@@ -22,7 +28,13 @@ const status2 = order2.querySelector('.status dd');
 biscuits2.innerText = order2.getAttribute('data-biscuits');
 donuts2.innerText = order2.getAttribute('data-donuts');
 pancakes2.innerText = order2.getAttribute('data-pancakes');
-status2.innerText = order2.getAttribute('data-delivered');
+
+//Checking for status of order 1
+if(order2.dataset.delivered === "true") {
+    status2.innerText = "Delivered"
+} else {
+    status2.innerText = "Pending"
+}
 
 
 //Order 3
@@ -32,7 +44,14 @@ const donuts3 = order3.querySelector('.donuts .count');
 const pancakes3 = order3.querySelector('.pancakes .count');
 const status3 = order3.querySelector('.status dd');
 
+//Checking for status of order 3
 biscuits3.innerText = order3.getAttribute('data-biscuits');
 donuts3.innerText = order3.getAttribute('data-donuts');
 pancakes3.innerText = order3.getAttribute('data-pancakes');
-status3.innerText = order3.getAttribute('data-delivered');
+
+//Checking for the status of order 3
+if (order3.dataset.delivered === "true") {
+    status3.innerText = "Delivered"
+} else{
+    status3.innerText = "Pending"
+}
