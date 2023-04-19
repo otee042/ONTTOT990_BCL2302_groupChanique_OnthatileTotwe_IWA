@@ -48,11 +48,13 @@ book1.status.style.color = STATUS_MAP.overdue.color;
 book1.reserve.disabled= !STATUS_MAP.overdue.canReserve;
 book1.checkout.disabled = !STATUS_MAP.overdue.canCheckout;
 book1.checkin.disabled= !STATUS_MAP.overdue.canCheckIn;
+
 book2.checkin.style.filter = 'grayscale(100%)';
 book2.status.style.color = STATUS_MAP.reserved.color;
 book2.reserve.disabled = !STATUS_MAP.reserved.canReserve; //sets the disabled property of the button to false'
 book2.checkout.disabled = !STATUS_MAP.reserved.canCheckout;
 book2.checkin.disabled = !STATUS_MAP.reserved.canCheckIn;
+
 book3.checkin.style.filter = 'grayscale(100%)';
 book3.status.style.color = STATUS_MAP.shelf.color;
 book3.reserve.disabled = !STATUS_MAP.shelf.canReserve;
