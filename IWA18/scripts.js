@@ -44,6 +44,9 @@ const handleAddSubmit = (event) => {}
 const handleEditToggle = (event) => {}
 const handleEditSubmit = (event) => {}
 const handleDelete = (event) => {}
+// const handleCancel = (event) {
+//     html.add.cancel = 'null'
+// }
 
 html.add.cancel.addEventListener('click', handleAddToggle)
 html.other.add.addEventListener('click', handleAddToggle)
@@ -68,9 +71,9 @@ for (const htmlArea of Object.values(html.area)) {
 
 //CHECKING
 
-const Onthatile = document.querySelector('help')
-const OnthatHandler = () => {
-    console.log('01/01/2022')
-}
-document.addEventListener("click" , OnthatHandler)
+// const Onthatile = document.querySelector('help')
+// const OnthatHandler = () => {
+//     console.log('01/01/2022')
+// }
+// document.addEventListener("click" , OnthatHandler)
 
