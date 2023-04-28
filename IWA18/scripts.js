@@ -1,3 +1,7 @@
+import './data.js'
+import './view.js'
+import { html } from './view.js';
+
 /**
  * A handler that fires when a user drags over any element inside a column. In
  * order to determine which column the user is dragging over the entire event
@@ -30,8 +34,12 @@ const handleDragOver = (event) => {
 
 const handleDragStart = (event) => {}
 const handleDragEnd = (event) => {}
-const handleHelpToggle = (event) => {}
-const handleAddToggle = (event) => {}
+const handleHelpToggle = (event) => {
+    html.help.overlay.style.display = 'block'
+}
+const handleAddToggle = (event) => {
+    html.add.overlay.style.display = 'block'
+}
 const handleAddSubmit = (event) => {}
 const handleEditToggle = (event) => {}
 const handleEditSubmit = (event) => {}
