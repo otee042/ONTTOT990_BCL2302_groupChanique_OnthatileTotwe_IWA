@@ -94,7 +94,8 @@ const createHtml = (athlete) => {
   const minutes = sum % 60;
   const hours = (sum - minutes) / 60;
   list.innerHTML = /* html */ `
-      <dt>Athlete: ${firstName +' '+ surname}</dt>
+      <dt>Athlete: </dt>
+      <dd> ${firstName +' '+ surname} </dd>
       <dt>Total Races: ${races}</dt>
       <dt>Event Date (Latest): ${day.toString().padStart(2, '0')+' '+ month +' '+ year}</dt>
       <dt>Total Time (Latest): ${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}</dt>
