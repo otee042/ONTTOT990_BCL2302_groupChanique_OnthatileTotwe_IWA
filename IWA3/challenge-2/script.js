@@ -6,4 +6,4 @@ import {role as nwabisa} from './nwabisa.js'
 import {role as alex} from './alex.js'
 import {role as johannes} from './johannes.js'
 
-console.log('Roles: ' , nwabisa , alex , johannes )
+console.log( `Roles:${nwabisa}\n      ${alex}\n      ${johannes} `)
